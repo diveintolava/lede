@@ -1825,6 +1825,15 @@ define Device/xiaomi_redmi-router-ac2100
 endef
 TARGET_DEVICES += xiaomi_redmi-router-ac2100
 
+define Device/xiaoyu_xy-c3
+  IMAGE_SIZE := 32448k
+  DEVICE_VENDOR := XiaoYu
+  DEVICE_MODEL := XY-C3
+  DEVICE_COMPAT_VERSION := 1.1
+  DEVICE_PACKAGES := kmod-ata-ahci kmod-usb3 -wpad-openssl
+endef
+TARGET_DEVICES += xiaoyu_xy-c3
+
 define Device/xiaoyu_xy-c5
   IMAGE_SIZE := 32448k
   DEVICE_VENDOR := XiaoYu
